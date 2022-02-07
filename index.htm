@@ -16,15 +16,15 @@ xmlns="http://www.w3.org/TR/REC-html40">
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Esther Barvels</o:LastAuthor>
   <o:Revision>2</o:Revision>
-  <o:TotalTime>20</o:TotalTime>
-  <o:Created>2022-02-03T15:05:00Z</o:Created>
-  <o:LastSaved>2022-02-03T15:05:00Z</o:LastSaved>
-  <o:Pages>1</o:Pages>
-  <o:Words>972</o:Words>
-  <o:Characters>5546</o:Characters>
-  <o:Lines>46</o:Lines>
-  <o:Paragraphs>13</o:Paragraphs>
-  <o:CharactersWithSpaces>6505</o:CharactersWithSpaces>
+  <o:TotalTime>55</o:TotalTime>
+  <o:Created>2022-02-07T08:03:00Z</o:Created>
+  <o:LastSaved>2022-02-07T08:03:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>1077</o:Words>
+  <o:Characters>6139</o:Characters>
+  <o:Lines>51</o:Lines>
+  <o:Paragraphs>14</o:Paragraphs>
+  <o:CharactersWithSpaces>7202</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -35,8 +35,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <link rel=colorSchemeMapping href="index_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:PunctuationKerning/>
@@ -677,12 +675,12 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	mso-font-pitch:variable;
 	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
 @font-face
-	{font-family:"Arial Narrow";
-	panose-1:2 11 6 6 2 2 2 3 2 4;
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;
 	mso-font-charset:0;
 	mso-generic-font-family:swiss;
 	mso-font-pitch:variable;
-	mso-font-signature:647 2048 0 0 159 0;}
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{mso-style-unhide:no;
@@ -716,6 +714,11 @@ a:visited, span.MsoHyperlinkFollowed
 	mso-themecolor:followedhyperlink;
 	text-decoration:underline;
 	text-underline:single;}
+span.MsoPlaceholderText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	color:gray;}
 p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
 	{mso-style-priority:1;
 	mso-style-unhide:no;
@@ -826,12 +829,6 @@ span.UnresolvedMention1
 	mso-style-priority:99;
 	color:#605E5C;
 	background:#E1DFDD;}
-span.SpellE
-	{mso-style-name:"";
-	mso-spl-e:yes;}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -1809,301 +1806,387 @@ break-word'>
 <div class=WordSection1>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
-style='font-size:12.0pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
-"Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-color:black'>Overview</span></b><span style='font-size:12.0pt;font-family:"Arial Narrow",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
-color:black'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>Overview</span></b><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
-"Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-color:black'>This document outlines the methodology used to generated the
-datasets displayed in the agricultural analysis web-application. The app
-displays three nation-wide datasets at monthly intervals from 2017-today: NDVI maps
-targeting cropland, surface water area (as 10-meter resolution maps and time
-series figure), cropland area and precipitation (as time series chart).</span><span
-style='font-size:12.0pt;font-family:"Arial Narrow",sans-serif;mso-fareast-font-family:
-"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>This document outlines
+the methodology used to generated the datasets displayed in the agricultural
+analysis web-application. The app displays three nation-wide datasets at
+monthly intervals from 2017-today: NDVI maps targeting cropland, surface water
+area (as 10-meter resolution maps and time series chart), cropland area and precipitation
+(as time series chart).<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
-"Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-color:black'>&nbsp;<o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>&nbsp;<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;font-family:"Arial Narrow",sans-serif;mso-fareast-font-family:
-"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'><o:p>&nbsp;</o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
-style='font-size:12.0pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
-"Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-color:black'>NDVI Composites</span></b><span style='font-size:12.0pt;
-font-family:"Arial Narrow",sans-serif;mso-fareast-font-family:"Times New Roman";
-mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>NDVI Composites</span></b><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
-"Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-color:black'>Source data: Sentinel-2</span><span style='font-size:12.0pt;
-font-family:"Arial Narrow",sans-serif;mso-fareast-font-family:"Times New Roman";
-mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>Source data:
+Sentinel-2<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
-"Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-color:black'>Script:&nbsp;</span><a
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>Script:&nbsp;</span><a
 href="https://code.earthengine.google.com/c6c7c1fc871a94016652ed53c780704c"><span
-style='font-size:12.0pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
-"Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri'>NDVI
-Composites</span></a><span style='font-size:12.0pt;font-family:"Arial Narrow",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
-color:black'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin'>NDVI Composites</span></a><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p></o:p></span></p>
 
 <ol style='margin-top:0in' start=1 type=1>
  <li class=MsoNormal style='color:black;margin-bottom:0in;line-height:normal;
      mso-list:l3 level1 lfo1;tab-stops:list .5in'><span style='font-size:12.0pt;
-     mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
-     mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri'>Cloud masking.
-     Each image in the Sentinel-2 time-series was cloud and cloud shadow masked
-     using the&nbsp;</span><span style='color:windowtext'><a
+     font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+     mso-bidi-theme-font:major-latin'>Cloud masking. Each image in the
+     Sentinel-2 time-series was cloud and cloud shadow masked using the&nbsp;</span><span
+     style='color:windowtext'><a
      href="https://developers.google.com/earth-engine/tutorials/community/sentinel-2-s2cloudless"><span
-     style='font-size:12.0pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
-     "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri'>Sen2CloudLess
-     algorithm</span></a></span><span style='font-size:12.0pt;mso-ascii-font-family:
-     Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:
-     Calibri;mso-bidi-font-family:Calibri'>.</span><span style='font-size:12.0pt;
-     font-family:"Arial Narrow",sans-serif;mso-fareast-font-family:"Times New Roman";
-     mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></li>
+     style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+     major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+     major-latin;mso-bidi-theme-font:major-latin'>Sen2CloudLess algorithm</span></a></span><span
+     style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+     major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+     major-latin;mso-bidi-theme-font:major-latin'>. Processing of Sentinel-2
+     Top of Atmosphere (TOA) imagery through </span><span style='color:windowtext'><a
+     href="https://github.com/MarcYin/SIAC_GEE"><span style='font-size:12.0pt;
+     font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+     mso-bidi-theme-font:major-latin'>sensor-invariant atmospheric correction
+     (SIAC)</span></a></span><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+     mso-ascii-theme-font:major-latin;mso-fareast-font-family:"Times New Roman";
+     mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'>.*<o:p></o:p></span></li>
  <li class=MsoNormal style='color:black;margin-bottom:0in;line-height:normal;
      mso-list:l3 level1 lfo1;tab-stops:list .5in'><span style='font-size:12.0pt;
-     mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
-     mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri'>Mosaicking/compositing
-     at monthly intervals. This process returned one image per month, with each
-     pixel representing the mean value of all non-masked pixels available
-     within the given month.</span><span style='font-size:12.0pt;font-family:
-     "Arial Narrow",sans-serif;mso-fareast-font-family:"Times New Roman";
-     mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></li>
+     font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+     mso-bidi-theme-font:major-latin'>Mosaicking/compositing at monthly
+     intervals. This process returned one image per month, with each pixel
+     representing the mean value of all non-masked pixels available within the
+     given month.<o:p></o:p></span></li>
  <li class=MsoNormal style='color:black;margin-bottom:0in;line-height:normal;
      mso-list:l3 level1 lfo1;tab-stops:list .5in'><span style='font-size:12.0pt;
-     mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
-     mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri'>Masking out
-     non-cropland. The mosaics were masked using the 10m annual cropland maps
-     produced by UNOSAT (see below) to display only agricultural areas.</span><span
-     style='font-size:12.0pt;font-family:"Arial Narrow",sans-serif;mso-fareast-font-family:
-     "Times New Roman";mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></li>
+     font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+     mso-bidi-theme-font:major-latin'>Masking out non-cropland. The mosaics
+     were masked using the 10m annual cropland maps produced by UNOSAT (see
+     below) to display only agricultural areas.<o:p></o:p></span></li>
 </ol>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
-"Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-color:black'>The cloud free coverage of the mosaics was 85-99%, with the vast
-majority reaching&nbsp;&gt;95% coverage.<o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>The cloud free
+coverage of the mosaics was 85-99%, with the vast majority
+reaching&nbsp;&gt;95% coverage.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
-"Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-color:black'><o:p>&nbsp;</o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
-"Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-color:black'><o:p>&nbsp;</o:p></span></p>
+style='font-size:10.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>*Note: Due to the lack
+of Bottom of Atmosphere (BOA) imagery, i.e., atmospherically corrected imagery,
+for January 2017 to October 2018 in some parts of the region, TOA imagery was
+used for this time period. Despite improvement of the NDVI accuracy through applying
+</span><a href="https://github.com/MarcYin/SIAC_GEE"><span style='font-size:
+10.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+mso-bidi-theme-font:major-latin'>SIAC</span></a><span style='font-size:10.0pt;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+mso-bidi-theme-font:major-latin;color:black'> to TOA imagery, NDVI values are
+still slightly underestimated for this time period. This should therefore be
+considered when interpreting trends of NDVI.<o:p></o:p></span></p>
 
-<p class=MsoNoSpacing><b><span style='font-size:12.0pt'>Cropland Classifications<o:p></o:p></span></b></p>
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNoSpacing><span style='font-size:12.0pt'>Source data: Sentinel-2,
-Sentinel-1, Landsat-8, and MODIS Aqua and Terra, USRG SRTM (DEM)<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNoSpacing><span style='font-size:12.0pt'>Script (Training): </span><a
+<p class=MsoNoSpacing><b><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Cropland Classifications<o:p></o:p></span></b></p>
+
+<p class=MsoNoSpacing><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Source data: Sentinel-2, Sentinel-1, Landsat-8, and MODIS Aqua and
+Terra, USRG SRTM (DEM)<o:p></o:p></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Script (Training): </span><a
 href="https://code.earthengine.google.com/02fabdf7226232f118dd0a764e944dfd"><span
-style='font-size:12.0pt'>Generating Training Data</span></a><span
-style='font-size:12.0pt'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'>Generating
+Training Data</span></a><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'><o:p></o:p></span></p>
 
-<p class=MsoNoSpacing><span style='font-size:12.0pt'>Script (Classification): </span><a
+<p class=MsoNoSpacing><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Script (Classification): </span><a
 href="https://code.earthengine.google.com/292344542f8b2ee0612a98a026ac975c"><span
-style='font-size:12.0pt'>Classifying</span></a><span style='font-size:12.0pt'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'>Classifying</span></a><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><o:p></o:p></span></p>
 
-<p class=MsoNoSpacing><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+<p class=MsoNoSpacing><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNoSpacing><span style='font-size:12.0pt'>The cropland maps were produced
-by UNOSAT through supervised image classification using training data and the
-Random Forest (RF) classifier. Processing was performed in Google Earth Engine
-(GEE) while the validation was mainly performed in ArcGIS Pro.<o:p></o:p></span></p>
+<p class=MsoNoSpacing><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>The cropland maps were produced by UNOSAT through supervised image
+classification using training data and the Random Forest (RF) classifier.
+Processing was performed in Google Earth Engine (GEE) while the validation was
+mainly performed in ArcGIS Pro.<o:p></o:p></span></p>
 
 <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in;mso-list:l9 level1 lfo8'><![if !supportLists]><span
-style='font-size:12.0pt;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><span
 style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt'>Generating
-training data. Training samples were manually collected for nine land cover
-classes (annual crops, perennial crops, forest, fallow, grassland, rangeland,
-bare land, water, artificial) by visual interpretation of satellite imagery for
-five agricultural seasons, 2016/17 to 2020/21.<o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Generating training data. Training samples were manually collected
+for nine land cover classes (annual crops, perennial crops, forest, fallow,
+grassland, rangeland, bare land, water, artificial) by visual interpretation of
+satellite imagery for five agricultural seasons, 2016/17 to 2020/21.<o:p></o:p></span></p>
 
 <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in;mso-list:l9 level1 lfo8'><![if !supportLists]><span
-style='font-size:12.0pt;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><span
 style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt'>Preparing a layer
-stack. The layer-stack included the following:<o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Preparing a layer stack. The layer-stack included the following:<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
 margin-bottom:0in;margin-left:1.0in;mso-add-space:auto;text-indent:-.25in;
 line-height:normal;mso-list:l14 level1 lfo14'><![if !supportLists]><span
 style='font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New";
 color:black'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt;mso-ascii-font-family:
-Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'>Cloud
-masked Sentinel-2/Landsat-8/MODIS monthly composites (bands: NDWI, NDVI, blue,
-green, red, <span class=SpellE>nir</span>, swir1, swir2). The Sentinel-2
-time-series was snow masking using a combination of automatic and spectral
-based thresholds and manual delineation.</span><span style='font-size:12.0pt;
-font-family:"Arial Narrow",sans-serif;color:black'><o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:black'>Cloud masked Sentinel-2/Landsat-8/MODIS monthly
+composites (bands: NDWI, NDVI, blue, green, red, nir, swir1, swir2). The
+Sentinel-2 time-series was snow masking using a combination of automatic and
+spectral based thresholds and manual delineation.<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
 margin-bottom:0in;margin-left:1.0in;mso-add-space:auto;text-indent:-.25in;
 line-height:normal;mso-list:l14 level1 lfo14'><![if !supportLists]><span
 style='font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New";
 color:black'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt;mso-ascii-font-family:
-Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'>Sentinel-1
-monthly composites (descending and ascending, bands: VV, VH).</span><span
-style='font-size:12.0pt;font-family:"Arial Narrow",sans-serif;color:black'><o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:black'>Sentinel-1 monthly composites (descending and
+ascending, bands: VV, VH).<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
 margin-bottom:0in;margin-left:1.0in;mso-add-space:auto;text-indent:-.25in;
 line-height:normal;mso-list:l14 level1 lfo14'><![if !supportLists]><span
 style='font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New";
 color:black'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt;mso-ascii-font-family:
-Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'>Sentinel-1
-monthly texture: entropy and inertia</span><span style='font-size:12.0pt;
-font-family:"Arial Narrow",sans-serif;color:black'><o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:black'>Sentinel-1 monthly texture: entropy and inertia<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
 margin-bottom:0in;margin-left:1.0in;mso-add-space:auto;text-indent:-.25in;
 line-height:normal;mso-list:l14 level1 lfo14'><![if !supportLists]><span
 style='font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New";
 color:black'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt;mso-ascii-font-family:
-Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'>Seasonal
-metrics: NDVI max, NDVI min, NDVI amp, NDVI <span class=SpellE>stdev</span>, VV
-max, VV min, VV amp, VV <span class=SpellE>stdev</span></span><span
-style='font-size:12.0pt;font-family:"Arial Narrow",sans-serif;color:black'><o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:black'>Seasonal metrics: NDVI max, NDVI min, NDVI amp, NDVI
+stdev, VV max, VV min, VV amp, VV stdev<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
 margin-bottom:0in;margin-left:1.0in;mso-add-space:auto;text-indent:-.25in;
 line-height:normal;mso-list:l14 level1 lfo14'><![if !supportLists]><span
 style='font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New";
 color:black'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt;mso-ascii-font-family:
-Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'>Slope</span><span
-style='font-size:12.0pt;font-family:"Arial Narrow",sans-serif;color:black'><o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:black'>Slope<o:p></o:p></span></p>
 
-<p class=MsoNoSpacing style='margin-left:.25in'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+<p class=MsoNoSpacing style='margin-left:.25in'><span style='font-size:12.0pt;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in;mso-list:l9 level1 lfo8'><![if !supportLists]><span
-style='font-size:12.0pt;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><span
 style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt'>Training the
-model. The RF was trained on the training points generated in Step 1, with
-associated features (pixel values extracted from the layer stack) from the
-corresponding month. I.e., training points from a given month were associate
-with satellite observations from the same month. Subsequently, all features
-extracted from one year were combined into one training dataset. Thereby, the
-RF was trained on data from one full calendar year.<o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Training the model. The RF was trained on the training points
+generated in Step 1, with associated features (pixel values extracted from the
+layer stack) from the corresponding month. I.e., training points from a given
+month were associate with satellite observations from the same month.
+Subsequently, all features extracted from one year were combined into one
+training dataset. Thereby, the RF was trained on data from one full calendar
+year.<o:p></o:p></span></p>
 
 <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in;mso-list:l9 level1 lfo8'><![if !supportLists]><span
-style='font-size:12.0pt;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><span
 style='mso-list:Ignore'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt'>Classifying. The
-cropland maps were classified in annual batches, with the RF model trained on
-data from the corresponding year. <o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Classifying. The cropland maps were classified in annual batches,
+with the RF model trained on data from the corresponding year. <o:p></o:p></span></p>
 
 <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in;mso-list:l9 level1 lfo8'><![if !supportLists]><span
-style='font-size:12.0pt;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><span
 style='mso-list:Ignore'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt'>Iteration. The
-training points were augmented based on the classification output, and the
-classifications rerun to improve classification results.<o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Iteration. The training points were augmented based on the
+classification output, and the classifications rerun to improve classification
+results.<o:p></o:p></span></p>
 
 <p class=MsoNoSpacing style='margin-left:.5in;text-indent:-.25in;mso-list:l9 level1 lfo8'><![if !supportLists]><span
-style='font-size:12.0pt;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><span
 style='mso-list:Ignore'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt'>Validation. The
-validation process was conducted in ArcGIS Pro. First, the 9-class land cover
-maps were reclassified into binary maps (cropland = 1, non-cropland = 0). To
-minimize the effects of spatial autocorrelation, validation points were sampled
-outside a minimum buffer of 1km of the training points. Stratified random
-sampling of validation points was generated for the binary classes. <o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Validation. The validation process was conducted in ArcGIS Pro.
+First, the 9-class land cover maps were reclassified into binary maps (cropland
+= 1, non-cropland = 0). To minimize the effects of spatial autocorrelation,
+validation points were sampled outside a minimum buffer of 1km of the training
+points. Stratified random sampling of validation points was generated for the
+binary classes. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'><o:p>&nbsp;</o:p></span></b></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p>&nbsp;</o:p></span></b></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'><o:p>&nbsp;</o:p></span></b></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p>&nbsp;</o:p></span></b></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>Surface Water
-Classifications</span></b><span style='font-size:12.0pt;mso-fareast-font-family:
-"Times New Roman";mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:black'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>Surface Water
+Classifications</span></b><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>Source data: Sentinel-2,
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>Source data: Sentinel-2,
 Sentinel-1, USRG SRTM (DEM), Merit Hydro (HAND) and&nbsp;</span><a
 href="https://glad.umd.edu/dataset/global-surface-water-dynamics"><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>GLAD</span></a><span style='font-size:
-12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin;color:black'>&nbsp;Surface Water.<o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin'>GLAD</span></a><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>&nbsp;Surface Water.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>Script (Training):&nbsp;</span><a
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>Script
+(Training):&nbsp;</span><a
 href="https://code.earthengine.google.com/86b72ae7e9ade9165ac3a36d9c7ba8a7"><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>Generating Training Data</span></a><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin'>Generating Training Data</span></a><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>Script
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>Script
 (Classification):&nbsp;</span><a
 href="https://code.earthengine.google.com/d7a3b5086260238b1f99491aa9b307cf"><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>Classifying</span></a><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin'>Classifying</span></a><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>&nbsp;<o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>&nbsp;<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>The Surface Water maps were
-generated through supervised image classification using training data and the
-Random Forest (RF) classifier. All processing was performed in Google Earth
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>The Surface Water maps
+were generated through supervised image classification using training data and
+the Random Forest (RF) classifier. All processing was performed in Google Earth
 Engine (GEE).<o:p></o:p></span></p>
 
 <ol style='margin-top:0in' start=1 type=1>
  <li class=MsoNormal style='color:black;margin-bottom:0in;line-height:normal;
      mso-list:l8 level1 lfo2;tab-stops:list .5in'><span style='font-size:12.0pt;
-     mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>Generating training data. Monthly surface
+     font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+     mso-bidi-theme-font:major-latin'>Generating training data. Monthly surface
      water datasets at 30 m resolution were available from GLAD 1999-2020. The
      GLAD surface water maps were used as sampling areas after applying a
      negative buffer of 30 m. 200 water and 800 land points were randomly
      sampled from each monthly map.<o:p></o:p></span></li>
  <li class=MsoNormal style='color:black;margin-bottom:0in;line-height:normal;
      mso-list:l8 level1 lfo2;tab-stops:list .5in'><span style='font-size:12.0pt;
-     mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>Preparing a layer stack. The layer-stack
+     font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+     mso-bidi-theme-font:major-latin'>Preparing a layer stack. The layer-stack
      included the following:<o:p></o:p></span></li>
 </ol>
 
@@ -2112,78 +2195,83 @@ margin-bottom:0in;margin-left:1.25in;mso-add-space:auto;text-indent:-.25in;
 line-height:normal;mso-list:l13 level1 lfo15'><![if !supportLists]><span
 style='font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New";
 color:black'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt;mso-fareast-font-family:
-"Times New Roman";mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:black'>Cloud masked Sentinel-2 composites (bands: MNDWI, NDVI, blue,
-green, red, <span class=SpellE>nir</span>, swir1, swir2). The Sentinel-2
-time-series was snow masking using a combination of automatic and spectral
-based thresholds and manual delineation.<o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:black'>Cloud
+masked Sentinel-2 composites (bands: MNDWI, NDVI, blue, green, red, nir, swir1,
+swir2). The Sentinel-2 time-series was snow masking using a combination of
+automatic and spectral based thresholds and manual delineation.<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
 margin-bottom:0in;margin-left:1.25in;mso-add-space:auto;text-indent:-.25in;
 line-height:normal;mso-list:l13 level1 lfo15'><![if !supportLists]><span
 style='font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New";
 color:black'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt;mso-fareast-font-family:
-"Times New Roman";mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:black'>Sentinel-1 monthly composites (descending and ascending, bands:
-VV, VH).<o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:black'>Sentinel-1
+monthly composites (descending and ascending, bands: VV, VH).<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
 margin-bottom:0in;margin-left:1.25in;mso-add-space:auto;text-indent:-.25in;
 line-height:normal;mso-list:l13 level1 lfo15'><![if !supportLists]><span
 style='font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New";
 color:black'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt;mso-fareast-font-family:
-"Times New Roman";mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:black'>Elevation<o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:black'>Elevation<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
 margin-bottom:0in;margin-left:1.25in;mso-add-space:auto;text-indent:-.25in;
 line-height:normal;mso-list:l13 level1 lfo15'><![if !supportLists]><span
 style='font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New";
 color:black'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt;mso-fareast-font-family:
-"Times New Roman";mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:black'>Slope<o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:black'>Slope<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
 margin-bottom:0in;margin-left:1.25in;mso-add-space:auto;text-indent:-.25in;
 line-height:normal;mso-list:l13 level1 lfo15'><![if !supportLists]><span
 style='font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New";
 color:black'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span></span><![endif]><span style='font-size:12.0pt;mso-fareast-font-family:
-"Times New Roman";mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:black'>HAND (Height Above Nearest Drainage)<o:p></o:p></span></p>
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:black'>HAND
+(Height Above Nearest Drainage)<o:p></o:p></span></p>
 
 <ol style='margin-top:0in' start=3 type=1>
  <li class=MsoNormal style='color:black;margin-bottom:0in;line-height:normal;
      mso-list:l8 level1 lfo2;tab-stops:list .5in'><span style='font-size:12.0pt;
-     mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>Training the model. The RF was trained on
+     font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+     mso-bidi-theme-font:major-latin'>Training the model. The RF was trained on
      the training points generated in Step 1, with associated features (pixel
-     values extracted from the layer stack) from the corresponding month. <span
-     class=GramE>I.e.</span> training points from a given month were associate
-     with satellite observations from the same month. Subsequently, all
-     features extracted from one year were combined into one training dataset.
-     Thereby, the RF was trained on data from one full calendar year.<o:p></o:p></span></li>
+     values extracted from the layer stack) from the corresponding month. I.e.
+     training points from a given month were associate with satellite
+     observations from the same month. Subsequently, all features extracted
+     from one year were combined into one training dataset. Thereby, the RF was
+     trained on data from one full calendar year.<o:p></o:p></span></li>
  <li class=MsoNormal style='color:black;margin-bottom:0in;line-height:normal;
      mso-list:l8 level1 lfo2;tab-stops:list .5in'><span style='font-size:12.0pt;
-     mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>Classifying. The monthly surface water
+     font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+     mso-bidi-theme-font:major-latin'>Classifying. The monthly surface water
      maps were classified in annual batches, with the RF model trained on data
      from the corresponding year. The RF model for the 2021 classification was
      trained on 2020 data (no GLAD data was available for 2021).<o:p></o:p></span></li>
  <li class=MsoNormal style='color:black;margin-bottom:0in;line-height:normal;
      mso-list:l8 level1 lfo2;tab-stops:list .5in'><span style='font-size:12.0pt;
-     mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>Iteration. The training was augmented
+     font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+     mso-bidi-theme-font:major-latin'>Iteration. The training was augmented
      based on the classification output, and the classifications rerun until a
      satisfactory result was achieved.<o:p></o:p></span></li>
  <li class=MsoNormal style='color:black;margin-bottom:0in;line-height:normal;
      mso-list:l8 level1 lfo2;tab-stops:list .5in'><span style='font-size:12.0pt;
-     mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>Validation. The surface water
+     font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:major-latin;
+     mso-bidi-theme-font:major-latin'>Validation. The surface water
      classifications were validated visually. Attempts were made to calculate
      accuracies based on a subset of the training data. However, biases induced
      through the training data sampling technique resulted in unreliably high
@@ -2191,45 +2279,57 @@ color:black'>HAND (Height Above Nearest Drainage)<o:p></o:p></span></p>
 </ol>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>&nbsp;<o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>&nbsp;<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'><o:p>&nbsp;</o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>Precipitation Data</span></b><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>Precipitation Composites</span></b><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>Source data: Climate
-Hazards Group InfraRed Precipitation <span class=GramE>With</span> Station
-Data, Version 2.0 Final (CHIRPS)<o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>Source data: Climate
+Hazards Group InfraRed Precipitation With Station Data, Version 2.0 Final
+(CHIRPS)<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>Script:&nbsp;</span><a
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>Script:&nbsp;</span><a
 href="https://code.earthengine.google.com/ab09b96e601fe363fd62d01b160091b3"><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>Precipitation Composites</span></a><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'><o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin'>Precipitation Composites</span></a><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>&nbsp;<o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>&nbsp;<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:black'>The monthly rainfall sum
-was computed on a pixel basis.<o:p></o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:black'>The rainfall sum in mm
+was computed per month. CHIRPS data have a spatial resolution of 0.05° (&#8776;
+5.5km).<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><o:p>&nbsp;</o:p></span></p>
 
 </div>
 
